@@ -25,7 +25,7 @@ const Categories = ({ data }: CategoriesProps) => {
     router.push(url);
   };
   return (
-    <div className="w-full overflow-x-auto space-x-2 flex p-1">
+    <div className="w-full space-x-2 flex p-1 overflow-hidden hover:overflow-auto">
       <button
         onClick={() => onClick(undefined)}
         className={cn(
