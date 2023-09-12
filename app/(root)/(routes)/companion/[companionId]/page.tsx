@@ -11,13 +11,16 @@ const CompanionPage = async ({ params }: CompanionPageProps) => {
   if (!userId) {
     return redirectToSignIn();
   }
+
+  if (params.companionId === "new") {
+    const categories = await prismadb.category.findMany();
+    return <CompanionForm initialData={null} categories={categories} />;
+  }
   const companion = await prismadb.companion.findUnique({
     where: {
       id: params.companionId,
-      userId,
     },
   });
-
   const categories = await prismadb.category.findMany();
   return <CompanionForm initialData={companion} categories={categories} />;
 };
