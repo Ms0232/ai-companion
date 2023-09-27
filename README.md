@@ -1,6 +1,6 @@
-# Build a SaaS AI Companion with Next.js 13, React, Tailwind, Prisma, Stripe | Full Tutorial 2023
+# Build a SaaS AI Companion with Next.js 13, React, Tailwind, Prisma, Stripe.
 
-This is a repository for Build a SaaS AI Platform with Next.js 13, React, Tailwind, Prisma, Stripe | Full Tutorial 2023.
+This is a repository for Build a SaaS AI Platform with Next.js 13, React, Tailwind, Prisma, Stripe.
 
 Features:
 
@@ -66,7 +66,7 @@ NEXT_PUBLIC_APP_URL="http://localhost:3000"
 
 ### Setup Prisma
 
-Add MySQL Database (I used PlanetScale)
+Add mongodb Database
 
 ```shell
 npx prisma db push
